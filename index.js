@@ -58,7 +58,7 @@ const cardContainer = document.getElementById('container')
 
 /* Obtengo el array */
 let pizzasFiltered = JSON.parse(localStorage.getItem('pizzasFiltered')) || [];
-
+// console.log(pizzasFiltered);
 /* Guardo el array */
 const saveArray = () => {
   localStorage.setItem('pizzasFiltered',JSON.stringify(pizzasFiltered));
@@ -66,6 +66,7 @@ const saveArray = () => {
 
 /* Crea la card */
 const createCard = (object) => {
+
   return `
     <div class="card">
       <div class="img_name_price">
@@ -90,9 +91,13 @@ const createCard = (object) => {
 
 /* Renderiza la card */
 const renderCard = () => {
-    cardContainer.innerHTML = createCard(pizzasFiltered);
-    showContainer();
-    // console.log(pizzasFiltered);
+  
+  if (pizzasFiltered.length === 0) {
+    hiddenContainer();
+    return;
+  }
+  cardContainer.innerHTML = createCard(pizzasFiltered);
+  showContainer();
 };
 
 /* Busca la pizza en el array */

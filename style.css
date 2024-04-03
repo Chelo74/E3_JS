@@ -1,0 +1,248 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('./Fonts/static/Montserrat-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat-Regular',Arial, Helvetica, sans-serif;
+    list-style: none;
+    font-size: 10px;
+}
+
+body{
+    /* background-color: #161616; */
+    background: rgb(20,20,20);
+    background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(0,0,0,0.98) 100%);
+}
+
+/* Header */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    margin: 0px 85px 0px 45px;
+    padding: 10px 10px;
+    border-bottom: 0.5px solid var(--white);
+}
+
+.header-Img{
+    height: 80%;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 55px;
+}
+
+.navbar li, a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.9rem;
+}
+
+.navbar img{
+    height: 27px;
+}
+
+.navbar-Item{
+    background-image: url('./Header-Hero/Home.svg');
+    background-position: 0 0;
+    background-size: 2.2rem 2.2rem;
+    background-repeat: no-repeat;
+    padding-left: 3rem;
+}
+
+.navbar-Item a{
+    font-size: 1.5rem;
+}
+
+/* Variables */
+
+:root {
+    --primary: #4f46e5;
+    --error: #b91c1c;
+    --gray: #6b7280;
+    --white: #FFFFFF;
+    --red-card: #ff005c;
+    --violet-card: #4c1d95;
+    --black-card: #181818;
+}
+
+/* Main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+}
+
+/* Title */
+
+h1{
+    font-size: 3.5rem;
+    font-weight: 100;
+    color: var(--white);
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Container */
+
+.container_all{
+    display: flex;
+    height: 60vh;
+    width: 80%;
+}
+
+/* Form */
+
+.form_container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.form_submit_btn {
+    font-size: 0.9rem;
+    background: linear-gradient(90deg, #ffa100, #ff005c);
+    color: var(--white);
+    transition: all 0.3s ease;
+    /* padding: 15px 25px; */
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    width: 300px;
+    height: 40px;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+/* Cards */
+
+.cards_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.card{
+    width: 460px;
+    height: 220px;
+    background: rgb(20,20,20);
+    background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(0,0,0,0.98) 100%);
+    box-shadow: 0px 10px 10px rgba(1, 2, 7, 0.8);
+    border-radius: 17px;
+}
+
+.img_name_price{
+    display: flex;
+    justify-content: center;
+    height: 60%;
+}
+
+.img_name_price img{
+    /* width: 240px; */
+    height: 80%;
+    margin-top: 12px;
+    /*margin-left: 12px; */
+    border-radius: 10px;
+}
+
+.name_price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 15px;
+}
+
+.name_price h2{
+    color: var(--white);
+    font-size: 1.8rem;
+}
+
+.name_price h3{
+    font-size: 1.8rem;
+    font-weight: 750;
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-inline-color: transparent;
+}
+
+.ingredients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.ingredients h4, p{
+    color: var(--gray);
+    font-size: 1.6rem;
+    height: 40%;
+}
+
+.ingredients p{
+    max-width: 460px;
+    text-align: center;
+    line-height: 2.4rem;
+}
+
+.form_field.error input {
+    border: 1px solid #dc3545;
+}
+
+.form_field.succes input {
+    border: 1px solid #04e923a9;
+}
+  
+.form_field small {
+    color: var(--error);
+    max-width: 350px;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 1.3rem;
+}
+  
+input[type="text"]{
+    border: 1px solid var(--white);
+    background-color: #252525;
+    border-radius: 1rem;
+    padding: 10px;
+    width: 300px;
+    height: 40px;
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+.hidden{
+    visibility: hidden;
+}

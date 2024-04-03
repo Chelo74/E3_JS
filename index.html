@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Pizzaaa</title>
+    </head>
+    <body>
+        <header class="header">
+            <img class="header-Img" src="./img/pizza.png" alt="Icono de Pizza">
+            <nav class="navbar">
+                <ul>
+                    <li class="navbar-Item"><a href="">Home</a></li>
+                    <!-- <li><a href=""><img src="./Header-Hero/IconCart.svg" alt="Icono de Carrito"></a></li> -->
+                    <li><a href=""><img src="./img/lupa.svg" alt="Icono de Usuario"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <h1>Buscador de Pizzas</h1>
+            <div class="container_all">
+                <div class="form_container">
+                    <form  id="form">
+                        <div class="form_field">
+                            <input  
+                                type="text" 
+                                name="id-pizza" 
+                                autocomplete="off" 
+                                placeholder="Ingresa el codigo"
+                                class= "form_input"
+                                id="input"
+                            />
+                            <small class="error_text"></small>
+                        </div>
+                        <div>
+                            <input type="submit" class="form_submit_btn" id='submit_btn' value="Buscar"/>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="cards_container" id="container">
+                    <!-- <div class="card">
+                        <div class="img_name_price">
+                            <div>
+                                <img src="./img/muzzarella.png" alt="">
+                            </div>
+                            <div class="name_price">
+                                <h2>Jamon y Queso</h2>
+                                <h3>Precio: $1200</h3>
+                            </div>
+                        </div>
+                        <div class="ingredients">
+                            <h4>Ingredientes</h4>
+                            <p>Jamon, queso, cebolla.</p>
+                        </div>
+                    </div>  -->
+                </div>
+            </div>  
+        </main>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
